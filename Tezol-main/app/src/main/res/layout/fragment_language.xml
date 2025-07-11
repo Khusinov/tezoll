@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_back"
+    android:orientation="vertical"
+    tools:context=".presentation.profile.LanguageFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/alata_regular"
+        android:text="@string/change_language"
+        android:textColor="@color/black_text_color"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/uz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_uzb_lang"
+            android:drawableEnd="@drawable/language_icon_state"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:fontFamily="@font/lato_regular"
+            android:paddingVertical="16dp"
+            android:text="@string/uzb"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/black_text_color" />
+
+        <RadioButton
+            android:id="@+id/ru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:button="@android:color/transparent"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_rus_lang"
+            android:drawableEnd="@drawable/language_icon_state"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:fontFamily="@font/lato_regular"
+            android:paddingVertical="16dp"
+            android:text="@string/rus"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ready"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/name_input_style"
+        android:backgroundTint="@color/main_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="@string/ready"
+        android:textColor="@color/only_black"
+        android:textSize="18sp" />
+</LinearLayout>

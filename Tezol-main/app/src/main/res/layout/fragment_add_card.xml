@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".presentation.profile.my_cards1.AddCardFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationIconTint="@color/black_text_color">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/myAddresses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:text="Karta qo'shish"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp"
+            tools:ignore="RelativeOverlap" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Karta raqami"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap" />
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:id="@+id/input_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/box_20"
+        android:digits="0123456789"
+        android:textColorHint="@color/gray_color"
+        android:hint="****  ****  ****  ****"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/black_text_color"
+        android:textSize="18sp"
+        app:mask="#### #### #### ####" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Amal qilish muddati"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap" />
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:id="@+id/input_expired_date"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/box_20"
+        android:digits="0123456789"
+        android:hint="** / **"
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
+        android:paddingEnd="36dp"
+        android:textColorHint="@color/gray_color"
+        android:textColor="@color/black_text_color"
+        android:textSize="18sp"
+        app:mask="##/##" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/box_20"
+        android:backgroundTint="@color/main_color"
+        android:gravity="center"
+        android:text="Qo'shish"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

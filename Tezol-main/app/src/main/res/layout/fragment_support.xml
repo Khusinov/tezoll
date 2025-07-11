@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_back"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp"
+    tools:context=".presentation.profile.SupportFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/technical_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata_regular"
+        android:paddingVertical="16dp"
+        android:text="Texnik yordam"
+        android:textColor="@color/black_text_color"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_text_color" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata_regular"
+        android:paddingVertical="16dp"
+        android:text="@string/call_to_operator"
+        android:textColor="@color/black_text_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

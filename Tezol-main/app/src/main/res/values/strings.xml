@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name" translatable="false">Tezol</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="ok">Ok</string>
+    <string name="enter_phone_number">Telefon raqamingizni kiriting</string>
+    <string name="phone_prefix" translatable="false">+998 (</string>
+    <string name="phone_mask" translatable="false">##) ### ## ##</string>
+    <string name="login">Kirish</string>
+    <string name="confirm">Tasdiqlash</string>
+    <string name="gps_ni_yoqib_qayta_urinib_ko_ring">GPS ni yoqib qayta urinib ko\'ring</string>
+    <string name="pgs_turned_off">GPS o\'chirilgan</string>
+    <string name="in_time">O‘z vaqtida</string>
+    <string name="we_deliver_in_time">Biz barcha buyurtmalarni o’z vaqtida yetkazib beramiz</string>
+    <string name="next">Keyingisi</string>
+    <string name="choose_options">Tanlov imkoni</string>
+    <string name="the_best">A’lo sifat</string>
+    <string name="we_recommend_good_products">Biz siz uchun eng sifatli maxsulotlarni taklif qilamiz</string>
+    <string name="start">Boshlash</string>
+    <string name="home">Asosiy</string>
+    <string name="shops">Do\'konlar</string>
+    <string name="catalog">Katalog</string>
+    <string name="basket">Savat</string>
+    <string name="profile">Profil</string>
+    <string name="exit_app">Dasturdan chiqish uchun yana bir marta bosing</string>
+    <string name="news">Yangilar</string>
+    <string name="top_maxsulotlar">Top maxsulotlar</string>
+    <string name="most_sold">Eng ko\'p sotilgan</string>
+    <string name="search">Qidirish</string>
+    <string name="clear_basket">Savatni tozalashni xoxlaysizmi?</string>
+    <string name="clear_basket_msg">Bir buyurtmada ikki xil do\'kondan maxsulot buyurtma berish imkoniyati mavjud emas</string>
+    <string name="yes">Xa</string>
+    <string name="no">Yo\'q</string>
+    <string name="my_orders">Buyurtmalarim</string>
+    <string name="soum">so\'m</string>
+    <string name="all">Jami</string>
+    <string name="start_page">Bosh sahifa</string>
+    <string name="your_basket_is_empty">Savatingiz hozir bo’sh. Bosh sahifa orqali hoziroq qo’shing.</string>
+    <string name="empty">Bo\'sh</string>
+    <string name="confirmation">Rasmiylashtirish</string>
+    <string name="delivery_type">Yetkazish turi</string>
+    <string name="delivery">Yetkazish:</string>
+    <string name="fast_delivery">Tezkor yetkazish:</string>
+    <string name="payment_type">To\'lov turi</string>
+    <string name="by_card">Karta orqali(oldindan)</string>
+    <string name="products">Maxsulotlar</string>
+    <string name="delivery2">Yetkazib berish</string>
+    <string name="select_address">Manzilni tanlash</string>
+    <string name="back">Orqaga</string>
+    <string name="order_create">Buyurtma yaratildi</string>
+    <string name="order_message">Buyurtma %1$d daqiqa ichida, kuryer tomonidan yetkaziladi</string>
+    <string name="product_not_found">Bunday maxsulot topilmadi</string>
+    <string name="call_to_operator">Operator bilan bog\'lanish</string>
+    <plurals name="product_count">
+        <item quantity="other">%d ta</item>
+    </plurals>
+
+    <string name="uzb">O\'zbek</string>
+    <string name="rus">Rus</string>
+    <string name="ready">Tayyor</string>
+    <string name="about_app">Dastur haqida</string>
+    <string name="app_creatorss">Dasturiy taminot yaratuvchisi</string>
+    <string name="change_language">Tilni o\'zgartirish</string>
+    <string name="my_cards">Platik kartalarim</string>
+    <string name="orders">Buyurtmalarim</string>
+    <string name="app_language">Dastur tili</string>
+    <string name="help">Yordam</string>
+    <string name="exit">Chiqish</string>
+    <string name="in_cash">Naqd pul(qabul qilganda)</string>
+
+
+</resources>

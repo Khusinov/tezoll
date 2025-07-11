@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="uz.khusinov.karvon.presentation.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="uz.khusinov.karvon.presentation.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_numberConfirmFragment"
+            app:destination="@id/numberConfirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introduction1Fragment"
+        android:name="uz.khusinov.karvon.presentation.login.Introduction1Fragment"
+        android:label="fragment_introduction1"
+        tools:layout="@layout/fragment_introduction1">
+        <action
+            android:id="@+id/action_introduction1Fragment_to_introduction2Fragment"
+            app:destination="@id/introduction2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introduction2Fragment"
+        android:name="uz.khusinov.karvon.presentation.login.Introduction2Fragment"
+        android:label="fragment_introduction2"
+        tools:layout="@layout/fragment_introduction2">
+        <action
+            android:id="@+id/action_introduction2Fragment_to_introduction3Fragment"
+            app:destination="@id/introduction3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introduction3Fragment"
+        android:name="uz.khusinov.karvon.presentation.login.Introduction3Fragment"
+        android:label="fragment_introduction3"
+        tools:layout="@layout/fragment_introduction3">
+        <action
+            android:id="@+id/action_introduction3Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberConfirmFragment"
+        android:name="uz.khusinov.karvon.presentation.login.NumberConfirmFragment"
+        android:label="fragment_number_confirm"
+        tools:layout="@layout/fragment_number_confirm">
+        <action
+            android:id="@+id/action_numberConfirmFragment_to_introduction1Fragment"
+            app:destination="@id/introduction1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="uz.khusinov.karvon.presentation.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_selectedShopFragment"
+            app:destination="@id/selectedShopFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_productDetailsBottomSheet"
+            app:destination="@id/productDetailsBottomSheet" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_orderHistoryFragment"
+            app:destination="@id/orderHistoryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_selectedCategoryFragment"
+            app:destination="@id/selectedCategoryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_myCardsFragment"
+            app:destination="@id/myCardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedShopFragment"
+        android:name="uz.khusinov.karvon.presentation.shops.selectedShop.SelectedShopFragment"
+        android:label="fragment_selected_shop"
+        tools:layout="@layout/fragment_selected_shop">
+        <action
+            android:id="@+id/action_selectedShopFragment_to_basketFragment2"
+            app:destination="@id/basketFragment2" />
+        <action
+            android:id="@+id/action_selectedShopFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_selectedShopFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/productDetailsBottomSheet"
+        android:name="uz.khusinov.karvon.presentation.shops.selectedShop.ProductDetailsBottomSheet"
+        android:label="ProductDetailsBottomSheet"
+        tools:layout="@layout/bottom_sheet_product_details" />
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="uz.khusinov.karvon.presentation.profile.order_history.OrderHistoryFragment"
+        android:label="fragment_order_history"
+        tools:layout="@layout/fragment_order_history" />
+    <fragment
+        android:id="@+id/basketFragment2"
+        android:name="uz.khusinov.karvon.presentation.basket.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket">
+        <action
+            android:id="@+id/action_basketFragment2_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedCategoryFragment"
+        android:name="uz.khusinov.karvon.presentation.catalog.selected_category.SelectedCategoryFragment"
+        android:label="fragment_selected_category"
+        tools:layout="@layout/fragment_selected_category">
+        <action
+            android:id="@+id/action_selectedCategoryFragment_to_productDetailsBottomSheet"
+            app:destination="@id/productDetailsBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="uz.khusinov.karvon.presentation.basket.ConfirmFragment"
+        android:label="fragment_confirm"
+        tools:layout="@layout/fragment_confirm">
+        <action
+            android:id="@+id/action_confirmFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_confirmFragment_to_orderCreated"
+            app:destination="@id/orderCreated" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="uz.khusinov.karvon.presentation.basket.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_orderCreated"
+            app:destination="@id/orderCreated" />
+        <action
+            android:id="@+id/action_mapFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderCreated"
+        android:name="uz.khusinov.karvon.presentation.order_created.OrderCreated"
+        android:label="fragment_order_created"
+        tools:layout="@layout/fragment_order_created">
+        <action
+            android:id="@+id/action_orderCreated_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/orderCreated"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="uz.khusinov.karvon.presentation.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <dialog
+        android:id="@+id/supportFragment"
+        android:name="uz.khusinov.karvon.presentation.profile.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <dialog
+        android:id="@+id/languageFragment"
+        android:name="uz.khusinov.karvon.presentation.profile.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/addCardFragment"
+        android:name="uz.khusinov.karvon.presentation.profile.my_cards1.AddCardFragment"
+        android:label="fragment_add_card"
+        tools:layout="@layout/fragment_add_card" >
+        <action
+            android:id="@+id/action_addCardFragment_to_verifyCardFragment"
+            app:destination="@id/verifyCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCardsFragment"
+        android:name="uz.khusinov.karvon.presentation.profile.my_cards1.MyCardsFragment"
+        android:label="fragment_my_cards"
+        tools:layout="@layout/fragment_my_cards" >
+        <action
+            android:id="@+id/action_myCardsFragment_to_addCardFragment"
+            app:destination="@id/addCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyCardFragment"
+        android:name="uz.khusinov.karvon.presentation.profile.my_cards1.VerifyCardFragment"
+        android:label="fragment_verify_card"
+        tools:layout="@layout/fragment_verify_card" />
+</navigation>

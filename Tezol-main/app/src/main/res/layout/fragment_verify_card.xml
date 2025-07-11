@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".presentation.profile.my_cards1.VerifyCardFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:tint="@color/black_text_color"
+        app:srcCompat="@drawable/ic_back" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="10dp"
+        android:text="Tasdiqlash"
+        android:textColor="@color/black_text_color"
+        android:textSize="24sp" />
+
+
+    <com.mukeshsolanki.OtpView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:itemBackground="@color/gray_card_background_color"
+        android:textColor="@color/black_text_color"
+        app:OtpCursorColor="@color/gray_card_background_color"
+        app:OtpCursorWidth="0dp"
+        app:OtpHideLineWhenFilled="true"
+        app:OtpItemCount="6"
+        app:OtpItemHeight="52dp"
+        app:OtpItemRadius="16dp"
+        app:OtpItemSpacing="8dp"
+        app:OtpItemWidth="55dp"
+        app:OtpLineColor="@color/main_color"
+        app:OtpViewType="rectangle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="8dp"
+        android:text="Kod noto'g'ri"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp"
+        tools:text="Kodni 00:49 daqiqa ichida kiriting" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/box_20"
+        android:backgroundTint="@color/main_color"
+        android:gravity="center"
+        android:text="Tasdiqlash"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".presentation.login.NumberConfirmFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@null"
+            android:src="@drawable/app_logo" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="66dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="TEZOL"
+            android:textColor="@color/black_text_color"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="SMS kodni telefon raqamiga yubordik"
+            android:textColor="@color/black_text_color"
+            android:textSize="14sp" />
+
+        <com.mukeshsolanki.OtpView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="32dp"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:hint="*"
+            android:inputType="number"
+            android:itemBackground="@drawable/bc_ping"
+            android:textAllCaps="true"
+            android:textColor="@color/black_text_color"
+            app:OtpHideLineWhenFilled="true"
+            app:OtpItemCount="5"
+            app:OtpItemHeight="64dp"
+            app:OtpItemRadius="16dp"
+            app:OtpItemSpacing="12dp"
+            app:OtpItemWidth="56dp"
+            app:OtpLineColor="@color/gray_color"
+            app:OtpState_filled="true"
+            app:OtpViewType="rectangle" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/main_color"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resentCode"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/gray_color"
+            android:text="Kodni qayta yuborish 01:00"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:cornerRadius="100dp" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

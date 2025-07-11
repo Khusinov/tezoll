@@ -1,0 +1,44 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://api.mapbox.com/downloads/v2/releases/maven")
+
+              authentication {
+                              basic(BasicAuthentication)
+                          }
+            credentials {
+                // Do not change the username below.
+                // This should always be `mapbox` (not your username).
+                username = "mapbox"
+                // Use the secret token you stored in gradle.properties as the password
+                password = "sk.eyJ1Ijoic29tZW9uZXV6YmVrIiwiYSI6ImNsbzJqdmY0NTBzOHEyanA3bjBuM2VtMHcifQ.1_88MdYyVjXhpaNWld4rGg"
+            }
+        }
+        jcenter()
+
+        maven { url "https://jitpack.io" }
+        maven { url = uri("https://dl.bintray.com/kuassivi/maven") }
+
+    }
+}
+
+rootProject.name = "Karvon"
+include ':app'
